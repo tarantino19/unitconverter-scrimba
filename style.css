@@ -11,7 +11,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #d3f9d8;
+  background-color: #748ffc;
 }
 
 .container {
@@ -26,7 +26,7 @@ body {
   height: 350px;
   width: 550px;
   border-radius: 10px 10px 0 0;
-  background: #51cf66;
+  background: #bac8ff;
 }
 
 .display-area h1 {
@@ -40,19 +40,21 @@ body {
 }
 
 .display-area textarea {
-  display: block;
-  width: 300px;
   border-style: hidden;
   outline: none;
-  margin: 0 auto;
-  margin-bottom: 50px;
-  text-align: center;
-  justify-content: center;
-  box-sizing: border-box;
+  width: 300px;
+  background: none;
   font-weight: 800;
-  font-size: 20px;
+  font-size: 60px;
+  text-align: center;
+  color: #ffffff;
   display: block;
-  align-items: center;
+  margin-left: 130px;
+}
+
+.display-area textarea::placeholder {
+  color: seashell;
+  opacity: 0.3;
 }
 
 button {
@@ -60,7 +62,7 @@ button {
   width: 200px;
   margin: 0 auto;
   font-size: 1.5rem;
-  background-color: #d3f9d8;
+  background-color: #dbe4ff;
   border-radius: 8px;
   border: none;
   padding: 0;
@@ -68,14 +70,15 @@ button {
 
 button:hover,
 button:active {
-  background-color: #85ff95;
+  background-color: #4c6ef5;
   cursor: pointer;
   font-weight: 600;
+  color: seashell;
 }
 
 .display-area textarea::placeholder {
-  color: black;
-  opacity: 0.25;
+  color: whitesmoke;
+  opacity: 0.6;
 }
 
 #convert-btn {
@@ -86,6 +89,7 @@ button:active {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  letter-spacing: 2px;
 }
 
 .box {
