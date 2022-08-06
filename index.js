@@ -6,8 +6,6 @@ let lengthEl = document.getElementById("length");
 let volumeEl = document.getElementById("volume");
 let massEl = document.getElementById("mass");
 
-console.log(convertBtn);
-
 //make the button work when clicked
 
 let inputNumber = numEl.value;
@@ -25,7 +23,7 @@ const oneKg = 2.204;
 
 function calLength() {
   let sumMeter = inputNumber / oneMeter;
-  sumMeter = parseFloat(sumMeter.toFixed(3));
+  sumMeter = parseFloat(sumMeter.toFixed(3)); // parsefloat for possible error on strings -.toFixed(3) for decimal
   let sumFeet = inputNumber * oneMeter;
   sumFeet = parseFloat(sumFeet.toFixed(3));
   lengthEl.innerHTML = `<p>${inputNumber} meters = ${sumFeet} feet | ${inputNumber} feet = ${sumMeter} meters</p>`;
